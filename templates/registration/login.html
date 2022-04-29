@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'testapp/home.html' %}
+{%block body%}
+<div class="container mb-5">
+
+    <h1 class="alert-success  p-3 mb-3">Login</h1>
+
+<form method="POST">
+    {{form.as_p}}
+    {%csrf_token%}
+    <input type="submit"class='btn btn-success' value="Login">
+</form>
+</div>
+{%endblock%}
